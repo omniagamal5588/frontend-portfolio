@@ -10,6 +10,7 @@
   const PROJECTS = [
     {
       slug: "sela",
+      url: "https://sela-landing-app.vercel.app/",
       title: "Sela SuperApp",
       tag: "Employee Engagement",
       type: "Enterprise SuperApp",
@@ -21,6 +22,7 @@
     },
     {
       slug: "elgarage",
+      url: "https://www.el-garage.com/eg/en",
       title: "El Garage",
       tag: "Automotive E-Commerce",
       type: "E-Commerce",
@@ -31,6 +33,7 @@
     },
     {
       slug: "sellicon",
+      url: "https://main.d2ccry5o40da80.amplifyapp.com/ar",
       title: "Silicon21-HQ",
       tag: "Corporate Website",
       type: "Corporate",
@@ -41,6 +44,7 @@
     },
     {
       slug: "mobdra",
+      url: "https://main.d3hunfi6iwnyyj.amplifyapp.com/",
       title: "Mobdra",
       tag: "Car Import Platform",
       type: "E-Commerce",
@@ -51,6 +55,7 @@
     },
     {
       slug: "g1-landscape",
+      url: "https://www.nat-scape.com/en",
       title: "G1 Landscape",
       tag: "Landscaping & Maintenance",
       type: "Business Website",
@@ -61,6 +66,7 @@
     },
     {
       slug: "tree-systems",
+      url: "https://www.treesystems.sa/ar",
       title: "Tree Systems",
       tag: "Corporate Website",
       type: "Corporate",
@@ -112,13 +118,11 @@
       const chips = p.stack.map((s) => `<span class="chip">${esc(s)}</span>`).join("");
       return `
       <article class="project${p.wide ? " project--wide" : ""}">
-        <div class="project__cover" data-proj="${p.slug}" data-idx="0" role="button" tabindex="0" aria-label="Open ${esc(
-        p.title
-      )} gallery">
+      <a class="project__cover" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(p.title)} live site">
           <span class="project__type">${esc(p.type)}</span>
           <img src="${cover.thumb}" alt="${esc(p.title)} — ${esc(cover.caption)}" loading="lazy">
-          <span class="project__zoom"><span>${imgs.length} screens · click to view ↗</span></span>
-        </div>
+          <span class="project__zoom"><span>${imgs.length} screens · visit site ↗</span></span>
+        </a>
         <div class="project__body">
           <div class="project__titlerow">
             <h3 class="project__title">${esc(p.title)}</h3>
@@ -195,9 +199,9 @@
   }
 
   function wireEvents() {
-    document.addEventListener("click", (e) => {
+   document.addEventListener("click", (e) => {
       const t = e.target.closest("[data-proj]");
-      if (t) {
+      if (t && !t.classList.contains("project__cover")) {
         openLB(t.dataset.proj, parseInt(t.dataset.idx, 10) || 0);
       }
     });
