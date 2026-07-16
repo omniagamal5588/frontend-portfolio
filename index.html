@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omnia Gamal — Frontend Developer</title>
+  <meta name="description" content="Omnia Gamal — Frontend Developer specializing in React.js, Next.js and TypeScript. Component systems, bilingual RTL/LTR interfaces, complex form workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Cairo:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__mark">
+        <span class="nav__diamond">◆</span> Omnia<span class="nav__dot">.</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="btn btn--sm" href="assets/cv/Omnia_Gamal_CV.pdf" download>
+        <span>Download CV</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <span class="status reveal"><span class="status__dot" aria-hidden="true"></span>Open to frontend roles</span>
+        <p class="eyebrow reveal" data-delay="1">Frontend Developer<span class="eyebrow__sep">/</span>React · Next.js<span class="eyebrow__sep">/</span>Cairo, EG</p>
+        <h1 class="hero__name reveal" data-delay="2">
+          Omnia Gamal
+        </h1>
+        <div class="keyline reveal" data-delay="3" aria-hidden="true"></div>
+        <p class="hero__lede reveal" data-delay="4">
+          I build production web apps with <strong>React&nbsp;·&nbsp;Next.js&nbsp;·&nbsp;TypeScript</strong>
+          — reusable component systems, server-state integration, complex form flows,
+          and <strong>bilingual RTL/LTR</strong> interfaces from design hand-off to ship.
+        </p>
+        <div class="hero__cta reveal" data-delay="4">
+          <a class="btn btn--primary" href="#work">View selected work</a>
+          <a class="btn" href="mailto:omniagamal5588@gmail.com">Get in touch</a>
+        </div>
+        <ul class="hero__stats reveal" data-delay="5">
+          <li><div class="stat__n">6</div><div class="stat__l">Shipped projects</div></li>
+          <li><div class="stat__n">2</div><div class="stat__l">Languages EN · AR</div></li>
+          <li><div class="stat__n">RTL</div><div class="stat__l">/ LTR native</div></li>
+        </ul>
+        <ul class="hero__links reveal" data-delay="5">
+          <li><a href="mailto:omniagamal5588@gmail.com">omniagamal5588@gmail.com</a></li>
+          <li><a href="tel:+201554270735">+20 155 427 0735</a></li>
+          <li><a href="https://github.com/omniagamal5588" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/omnia-gamal-27520b224/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- SIGNATURE: developer profile as code -->
+      <aside class="specimen reveal" data-delay="3" aria-label="Developer profile as code">
+        <div class="specimen__bar">
+          <span class="specimen__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="specimen__label">developer.ts</span>
+        </div>
+        <pre class="codecard"><code><span class="tok-com">// the short version</span>
+<span class="tok-kw">class</span> <span class="tok-cls">Developer</span> {
+  <span class="tok-prop">name</span> <span class="tok-punc">=</span> <span class="tok-str">"Omnia Gamal"</span>;
+  <span class="tok-prop">role</span> <span class="tok-punc">=</span> <span class="tok-str">"Frontend Developer"</span>;
+  <span class="tok-prop">stack</span> <span class="tok-punc">=</span> [<span class="tok-str">"React.js"</span>, <span class="tok-str">"Next.js"</span>,
+    <span class="tok-str">"TypeScript"</span>, <span class="tok-str">"Tailwind CSS"</span>];
+  <span class="tok-prop">years</span> <span class="tok-punc">=</span> <span class="tok-num">2</span>;
+  <span class="tok-prop">shipsCleanCode</span> <span class="tok-punc">=</span> <span class="tok-bool">true</span>;
+}<span class="caret" aria-hidden="true"></span></code></pre>
+        <p class="specimen__hint">A component that describes itself — clean, typed, and shipped.</p>
+      </aside>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">Selected work<span class="eyebrow__sep">/</span><span id="projCount">6</span> projects</p>
+        <h2 class="section__title">Shipped, from hand-off to production</h2>
+      </div>
+      <div class="projects" id="projects"><!-- injected --></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">Toolkit<span class="eyebrow__sep">/</span>tokens</p>
+        <h2 class="section__title">The stack I reach for</h2>
+      </div>
+      <div class="tokens" id="skills-grid"><!-- injected --></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">Experience<span class="eyebrow__sep">/</span>current</p>
+        <h2 class="section__title">Where I do the work</h2>
+      </div>
+      <article class="xp">
+        <div class="xp__meta">
+          <span class="xp__co">Spark Systems</span>
+          <span class="xp__when">06 / 2025 — Present</span>
+          <span class="xp__where">Cairo, Egypt</span>
+        </div>
+        <div class="xp__body">
+          <h3 class="xp__role">Frontend Developer</h3>
+          <ul class="xp__list">
+            <li>Build production web apps with React.js, Next.js and TypeScript across multiple client projects.</li>
+            <li>Design and maintain a library of reusable, accessible UI components with Tailwind CSS and Shadcn UI — cutting repeat build time on new screens.</li>
+            <li>Integrate REST APIs and manage server state with React Query, standardizing data-fetching, caching and loading/error states.</li>
+            <li>Implement type-safe form validation and submission flows with React Hook Form and Zod.</li>
+            <li>Deliver multilingual (i18n) interfaces with next-intl, including full RTL/LTR support.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT / EDUCATION -->
+    <section id="about" class="section wrap">
+      <div class="section__head">
+        <p class="eyebrow">About<span class="eyebrow__sep">/</span>background</p>
+        <h2 class="section__title">Foundations</h2>
+      </div>
+      <div class="about-grid">
+        <article class="fact">
+          <h3 class="fact__k">Education</h3>
+          <p class="fact__v">B.Sc. Medical Informatics</p>
+          <p class="fact__sub">Faculty of Computers &amp; AI, Banha University · 2019–2023</p>
+          <p class="fact__note">GPA 3.2 / 4.0 (Very Good) · Graduation project A+</p>
+        </article>
+        <article class="fact">
+          <h3 class="fact__k">Certificate</h3>
+          <p class="fact__v">ITI — Frontend &amp; Cross-Platform</p>
+          <p class="fact__sub">Intensive Code Camp (ICC) · 4 months</p>
+          <p class="fact__note">React.js, Next.js and React Native, industry best practices.</p>
+        </article>
+        <article class="fact">
+          <h3 class="fact__k">Languages</h3>
+          <p class="fact__v">Arabic <span class="fact__tag">Native</span></p>
+          <p class="fact__v">English <span class="fact__tag">Professional</span></p>
+          <p class="fact__note">Bilingual delivery — which is why RTL/LTR is second nature.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer__left">
+      <span class="nav__diamond">◆</span>
+      <div>
+        <p class="footer__name">Omnia Gamal Mohamed</p>
+        <p class="footer__role">Frontend Developer · React · Next.js · TypeScript</p>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="mailto:omniagamal5588@gmail.com">Email</a>
+      <a href="https://github.com/omniagamal5588" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/omnia-gamal" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/cv/Omnia_Gamal_CV.pdf" download>CV</a>
+    </div>
+  </footer>
+
+  <div class="lb" id="lightbox" hidden>
+    <button class="lb__close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb__nav lb__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure class="lb__figure">
+      <img class="lb__img" id="lbImg" alt="" />
+      <figcaption class="lb__cap"><span id="lbProject"></span><span id="lbCaption"></span><span id="lbCount"></span></figcaption>
+    </figure>
+    <button class="lb__nav lb__nav--next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="assets/img-manifest.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
