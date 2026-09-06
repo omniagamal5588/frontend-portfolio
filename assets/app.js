@@ -33,7 +33,7 @@
     },
     {
       slug: "sellicon",
-      url: "https://main.d2ccry5o40da80.amplifyapp.com/ar",
+      url: "https://main.d3hunfi6iwnyyj.amplifyapp.com/",
       title: "Silicon21-HQ",
       tag: "Corporate Website",
       type: "Corporate",
@@ -44,7 +44,7 @@
     },
     {
       slug: "mobdra",
-      url: "https://main.d3hunfi6iwnyyj.amplifyapp.com/",
+      url: "https://main.d2ccry5o40da80.amplifyapp.com/ar",
       title: "Mobdra",
       tag: "Car Import Platform",
       type: "E-Commerce",
